@@ -3,7 +3,7 @@ MPRSimpleViewer
 @rcorredorj
 
 Simple MPR medical imaging viewer using VTK 6.0.1 and Qt 5.2.1
-Inspired on the FourPaneViewer VTK Example (http://vtk.org/gitweb?p=VTK.git;a=tree;f=Examples/GUI/Qt/FourPaneViewer;hb=HEAD)
+Inspired on the FourPaneViewer VTK Example (http://bit.ly/1qcGx98)
 
 Environment Settings
 ==============
