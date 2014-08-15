@@ -27,16 +27,19 @@ Walkthrough from scratch
     set (CMAKE_PREFIX_PATH "C:\\Program Files (x86)\\Windows Kits\\8.0\\Lib\\win8\\um\\x64")
   This corrects an error to find GLUT and OpenGL libraries from the Windows SDK
   9. Launch CMake for the VTK project and activate options 
-    VTK_GROUP_IMAGING
-    VTK_GROUP_QT
+    - VTK_GROUP_IMAGING
+    - VTK_GROUP_QT
+  
   After this, open advanced CMake settings and set 
-    VTK_QT_VERSION 5
-    QT_QMAKE_EXECUTABLE [PATH_TO_QT]\bin\qmake.exe
+    - VTK_QT_VERSION 5
+    - QT_QMAKE_EXECUTABLE [PATH_TO_QT]\bin\qmake.exe
+  
   It is useful to set also 
-    CMAKE_INSTALL_PREFIX to a specific folder. Normally I use the following hierarchie
-      VTK_SRC  // Sources
-      VTK_BIN  // To generate the project
-      VTK_INST // For the installing process
+    - CMAKE_INSTALL_PREFIX to a specific folder. Normally I use the following hierarchie
+      - VTK_SRC  // Sources
+      - VTK_BIN  // To generate the project
+      - VTK_INST // For the installing process
+  
   Some problems with the path to Qt modules could appear but it is only to set the correct cmake folder path for each module and it will work.
   10. Open the VS solution (.sln) and compile in Debug or Release as you prefer, but remember that you will need to compile your project in the same way. Better to "build" the INSTALL target
   11. Add VTK bin folder to system PATH
